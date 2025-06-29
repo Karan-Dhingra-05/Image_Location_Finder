@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Location Finder</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#dce0d9] min-h-screen flex items-center justify-center px-4">
+    <div class="bg-[#fbf6ef] text-[#333] p-8 rounded-2xl shadow-xl w-full max-w-md text-center">
+      <h2 class="text-2xl font-semibold mb-6">Upload an Image to Find the Location</h2>
+
+      <form method="POST" enctype="multipart/form-data" class="space-y-4">
+        <input
+          type="file"
+          name="image"
+          accept="image/*"
+          required
+          class="w-full text-sm text-gray-700 border border-gray-300 rounded-lg cursor-pointer bg-white file:mr-4 file:py-2 file:px-4 file:border-0 file:text-sm file:bg-[#ead7c3] file:text-[#333]"
+        />
+        <input
+          type="submit"
+          value="Find Location"
+          class="bg-[#ead7c3] text-[#333] font-semibold px-6 py-2 rounded-lg hover:bg-[#e5c9b3] transition"
+        />
+      </form>
+
+      {% if result %}
+      <div class="mt-8 text-left animate-fadeIn">
+        <h3 class="text-xl font-medium mb-4">Prediction:</h3>
+        <img
+          src="{{ url_for('static', filename='uploads/' + result.filename) }}"
+          alt="Uploaded Image"
+          class="w-full rounded-lg mb-4 shadow-md"
+        />
+
+        <p class="mb-1"><strong>Country:</strong> {{ result.country }} ({{ '%.2f' | format(result.country_conf) }})</p>
+        <p class="mb-1"><strong>City:</strong> {{ result.city }} ({{ '%.2f' | format(result.city_conf) }})</p>
+
+        {% if result.landmark %}
+        <p class="mb-1"><strong>Landmark:</strong> {{ result.landmark }} ({{ '%.2f' | format(result.landmark_conf) }})</p>
+        {% endif %}
+
+        {% if result.maps_link %}
+        <p class="mt-2">
+          <a href="{{ result.maps_link }}" target="_blank" class="text-[#b57d57] font-semibold underline hover:opacity-80">
+            🔗 View on Google Maps
+          </a>
+        </p>
+        {% endif %}
+      </div>
+      {% endif %}
+    </div>
+
+    <style>
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(12px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .animate-fadeIn {
+        animation: fadeIn 0.8s ease-out;
+      }
+    </style>
+  </body>
+</html>

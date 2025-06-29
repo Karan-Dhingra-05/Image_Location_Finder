@@ -1,0 +1,120 @@
+{
+    "India": {
+      "cities": ["Delhi", "Mumbai", "Agra", "Kolkata", "Bengaluru"],
+      "landmarks": {
+        "Delhi": ["India Gate", "Red Fort", "Lotus Temple", "Qutub Minar", "Humayun's Tomb"],
+        "Mumbai": ["Gateway of India", "Marine Drive", "Chhatrapati Shivaji Terminus", "Elephanta Caves", "Haji Ali Dargah"],
+        "Agra": ["Taj Mahal", "Agra Fort", "Mehtab Bagh"],
+        "Kolkata": ["Victoria Memorial", "Howrah Bridge", "Dakshineswar Kali Temple", "Indian Museum"],
+        "Bengaluru": ["Vidhana Soudha", "Lalbagh Botanical Garden", "Cubbon Park", "Bangalore Palace"]
+      }
+    },
+    "United States": {
+      "cities": ["New York", "San Francisco", "Los Angeles", "Chicago", "Washington D.C."],
+      "landmarks": {
+        "New York": ["Statue of Liberty", "Times Square", "Central Park", "Empire State Building", "Brooklyn Bridge"],
+        "San Francisco": ["Golden Gate Bridge", "Alcatraz Island", "Lombard Street", "Fisherman's Wharf"],
+        "Los Angeles": ["Hollywood Sign", "Santa Monica Pier", "Griffith Observatory", "Rodeo Drive"],
+        "Chicago": ["Willis Tower", "Millennium Park", "Cloud Gate"],
+        "Washington D.C.": ["White House", "Lincoln Memorial", "Capitol Building"]
+      }
+    },
+    "France": {
+      "cities": ["Paris", "Nice", "Lyon", "Marseille"],
+      "landmarks": {
+        "Paris": ["Eiffel Tower", "Louvre Museum", "Notre-Dame Cathedral", "Champs-Élysées", "Sacre-Coeur"],
+        "Nice": ["Promenade des Anglais", "Castle Hill", "Place Masséna"],
+        "Lyon": ["Basilica of Notre-Dame de Fourvière", "Parc de la Tête d'Or", "Vieux Lyon"],
+        "Marseille": ["Old Port of Marseille", "Basilica of Notre-Dame de la Garde", "Calanques National Park"]
+      }
+    },
+    "Italy": {
+      "cities": ["Rome", "Venice", "Florence", "Milan"],
+      "landmarks": {
+        "Rome": ["Colosseum", "Trevi Fountain", "Pantheon", "Roman Forum", "St. Peter's Basilica"],
+        "Venice": ["St. Mark's Basilica", "Grand Canal", "Rialto Bridge", "Doge's Palace"],
+        "Florence": ["Cathedral of Santa Maria del Fiore", "Ponte Vecchio", "Uffizi Gallery"],
+        "Milan": ["Duomo di Milano", "Galleria Vittorio Emanuele II", "Sforza Castle"]
+      }
+    },
+    "Japan": {
+      "cities": ["Tokyo", "Kyoto", "Osaka", "Hiroshima"],
+      "landmarks": {
+        "Tokyo": ["Tokyo Tower", "Shibuya Crossing", "Senso-ji Temple", "Meiji Shrine"],
+        "Kyoto": ["Fushimi Inari Shrine", "Kinkaku-ji (Golden Pavilion)", "Arashiyama Bamboo Grove", "Gion District"],
+        "Osaka": ["Osaka Castle", "Dotonbori", "Umeda Sky Building"],
+        "Hiroshima": ["Peace Memorial Park", "Hiroshima Castle"]
+      }
+    },
+    "United Kingdom": {
+      "cities": ["London", "Edinburgh", "Manchester"],
+      "landmarks": {
+        "London": ["Big Ben", "Tower Bridge", "London Eye", "Buckingham Palace"],
+        "Edinburgh": ["Edinburgh Castle", "Royal Mile"],
+        "Manchester": ["Old Trafford", "Manchester Cathedral"]
+      }
+    },
+    "Germany": {
+      "cities": ["Berlin", "Munich", "Frankfurt"],
+      "landmarks": {
+        "Berlin": ["Brandenburg Gate", "Berlin Wall", "Reichstag Building"],
+        "Munich": ["Marienplatz", "English Garden"],
+        "Frankfurt": ["Römerberg", "Main Tower"]
+      }
+    },
+    "Australia": {
+      "cities": ["Sydney", "Melbourne", "Brisbane"],
+      "landmarks": {
+        "Sydney": ["Sydney Opera House", "Harbour Bridge", "Bondi Beach"],
+        "Melbourne": ["Federation Square", "Flinders Street Station"],
+        "Brisbane": ["Story Bridge", "South Bank Parklands"]
+      }
+    },
+    "Canada": {
+      "cities": ["Toronto", "Vancouver", "Montreal"],
+      "landmarks": {
+        "Toronto": ["CN Tower", "Royal Ontario Museum"],
+        "Vancouver": ["Stanley Park", "Capilano Suspension Bridge"],
+        "Montreal": ["Notre-Dame Basilica", "Old Montreal"]
+      }
+    },
+    "Brazil": {
+      "cities": ["Rio de Janeiro", "São Paulo"],
+      "landmarks": {
+        "Rio de Janeiro": ["Christ the Redeemer", "Sugarloaf Mountain", "Copacabana Beach"],
+        "São Paulo": ["São Paulo Cathedral", "Ibirapuera Park"]
+      }
+    },
+    "Indonesia": {
+      "cities": ["Jakarta", "Bali"],
+      "landmarks": {
+        "Jakarta": [
+          "National Monument",
+          "Istiqlal Mosque",
+          "Jakarta Cathedral",
+          "Kota Tua (Old Town)",
+          "Ancol Dreamland",
+          "Gelora Bung Karno Stadium",
+          "Taman Mini Indonesia Indah",
+          "Grand Indonesia Mall",
+          "Fatahillah Square",
+          "Ragunan Zoo",
+          "Thousand Islands (Pulau Seribu)"
+        ],
+        "Bali": [
+          "Uluwatu Temple",
+          "Tanah Lot",
+          "Tegallalang Rice Terrace",
+          "Besakih Temple",
+          "Ubud Monkey Forest",
+          "Mount Batur",
+          "Seminyak Beach",
+          "Nusa Penida Island",
+          "Ulun Danu Beratan Temple",
+          "Kuta Beach",
+          "Lempuyang Temple (Gates of Heaven)"
+        ]
+      }
+    }
+  }
+  
