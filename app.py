@@ -14,9 +14,7 @@ def index():
             filepath = os.path.join(app.config['UPLOAD_FOLDER'], image.filename)
             image.save(filepath)
 
-
             prediction = predict_location_hierarchical(filepath)
-
 
             if prediction['landmark']:
                 location_query = f"{prediction['landmark']}, {prediction['city']}, {prediction['country']}"
@@ -24,8 +22,6 @@ def index():
                 location_query = f"{prediction['city']}, {prediction['country']}"
 
             maps_url = f"https://www.google.com/maps/search/?api=1&query={location_query.replace(' ', '+')}"
-
-
             prediction['maps_link'] = maps_url
             prediction['filename'] = image.filename
             location_info = prediction
@@ -34,5 +30,5 @@ def index():
 
 if __name__ == '__main__':
     os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
-    port = int(os.environ.get("PORT", 5005)) 
+    port = int(os.environ["PORT"]) 
     app.run(host='0.0.0.0', port=port)
