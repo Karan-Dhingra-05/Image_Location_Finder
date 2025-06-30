@@ -3,7 +3,7 @@ from PIL import Image
 from transformers import CLIPProcessor, CLIPModel
 import torch
 
-model = CLIPModel.from_pretrained("geolocal/StreetCLIP")
+model = CLIPModel.from_pretrained("geolocal/StreetCLIP").half()
 processor = CLIPProcessor.from_pretrained("geolocal/StreetCLIP")
 
 model = model.to("cpu")
